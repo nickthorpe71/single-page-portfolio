@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+/* Google fonts ^^^*/
+
+/* To style the navigation bar */
+nav > a {
+    padding: 0 15px 10px 20px;
+    color: #222223;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20;
+}
+
+/* To change color when hovering over the navigation bar */
+nav a:hover {
+    color: #AEAEB2;
+}
+
+header > div > img {
+    border-radius: 50%;
+}
+
+header {
+    border: 1px solid #eeeef5;
+    padding: 10px;
+    background-color: #f8f8ff;
+}
+
+body {
+    color: #f8f8ff;
+    margin: 0;
+    padding: 50px;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 50px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Formats a group of elements to the same color and font */
+header, h1, h2, h3, h4, ul, ol, li, p {
+    color: #222223;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ol > li {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+ul > li {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/* Targets the project links to space them apart and format them */
+body > main > div > article > div > a {
+    padding: 0 20px 0px 0px;
+    color: #222223;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20;
+}
+
+body > main > div > article > div a:hover {
+    color: #AEAEB2;
+}
+
+/* Targets all other links to hold them at the default color unless hovered over */
+article > p > a:visited {color: #222223;} 
+article > p > a:hover {color: #AEAEB2;} 
+
+/* used as a class to center specific elements*/
+.align-center {
+    text-align: center;
+}
