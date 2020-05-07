@@ -6,7 +6,7 @@ This is a one page version of my portfolio.
 
 * [GitHub Profile](https://github.com/nickthorpe71)
 * [LinkedIn](https://www.linkedin.com/in/nick-thorpe-3339ba72/)
-* [Portfolio]()
+* [Portfolio](http://nickthorpe.dev/)
 
 ## Projects Included
 
