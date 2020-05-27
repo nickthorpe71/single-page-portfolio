@@ -1,20 +1,71 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
-/* Google fonts ^^^*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Poiret+One&display=swap');
 
-.group {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: start;
-    justify-content: center;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    flex-wrap: wrap;
+/* Text */
+/* Formats a group of elements to the same color and font */
+header, h1, h2, h3, h4, ul, ol, li, p {
+    color: #111111;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 
-img{
-    width: 100%;
-    max-width:350px;
+header h1 {
+    color: #ffffff;
+    font-family: 'Poiret One', cursive;
+    font-size: 54px;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    margin: 0px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+#intro .group .item h2 {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* Lists */
+
+ul > li {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.large-list > ul > li{
+    font-size: 28px;
+}
+
+/* Flexbox */
+.group {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 50px 0;
+}
+
+#contact .group{
+    margin-top: 0;
+}
+
+#contact .group .item-bottom{
+    margin-top: 60px;
 }
 
 .item {
@@ -22,36 +73,67 @@ img{
     flex: 1;
 }
 
-.item-padded{
-    margin: 5px;
-}
-
 .item-triple {
     flex: 3;
 }
 
-.column:first-of-type{
-    padding-left: 0px;
+/* Layout */
+body {
+    margin: 0;
+    margin: 50px;
+}
+main {
+    margin: 20px;
 }
 
-.column:last-of-type{
-    padding-right: 0px;
+header {
+    padding: 20px;
+    background-color: #111111;
 }
 
-.link-primary{
-    color: #111111;
+footer {
+    padding: 20px;
+    background-color: #111111;
+    margin-top: 60px;
+}
+
+.spaced-section{
+    margin: 110px 0px;
+}
+
+/* used as a class to center specific elements*/
+.align-center {
+    text-align: center;
+}
+
+/* Nav Bar */
+nav > ul >li{
     font-family: 'Montserrat', sans-serif;
-    font-size: 20;
+    list-style: none;
 }
 
-.link-primary:hover{
-    color: #AEAEB2;
+nav ul li a {
+    padding: 0 20px 0 0;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
 }
 
-.spaced-article{
-    margin: 150px 0px;
+nav ul{
+    display: flex;
+    flex-direction: row; 
+    padding-bottom: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+/* Links */
 a {
     text-decoration: none;
     color: #111111;
@@ -63,15 +145,16 @@ a:hover{
     color: #AEAEB2;
 }
 
-/* To style the navigation bar */
-nav > a {
-    padding: 0 15px 10px 20px;
-    font-weight: 300;
-    font-size: 26px;
-}
-
 .project-link > a{
     margin-right: 20px;
+}
+
+/* Images */
+
+img{
+    width: 100%;
+    max-width:350px;
+    border-radius: 10%;
 }
 
 .profile-pic {
@@ -79,104 +162,81 @@ nav > a {
     border-radius: 50%;
 }
 
-main {
-    margin: 20px;
-}
-
-header {
-    padding: 20px;
-    background-color: #ff6868;
-}
-
-footer {
-    padding: 20px;
-    background-color: #ff6868;
-    margin-top: 60px;
-}
-
 hr{
-    background-color: #ff6868;
+    background-color: #111111;
     height: 2px;
     border: none;
 }
 
-body {
-    color: #fcfcfc;
-    margin: 0;
-    padding: 50px;
-}
-
-h1 {
-    font-weight: 300;
-    font-size: 50px;
-}
-
-h2 {
-    font-weight: 300;
-    font-size: 32px;
-}
-
-h3 {
-    font-weight: 400;
-    font-size: 22px;
-}
-
-h4 {
-    font-weight: 300;
-    font-size: 16px;
-}
-
-p {
-    font-weight: 300;
-    font-size: 20px;
-}
-
-/* Formats a group of elements to the same color and font */
-header, h1, h2, h3, h4, ul, ol, li, p {
-    color: #111111;
+/* Forms */
+form input, 
+form textarea {
+    width: 100%;
+    margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
 }
 
-ul > li {
-    font-weight: 300;
-    font-size: 18px;
+form label {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.large-list > ul > li{
-    font-size: 28px;
-}
-
-/* used as a class to center specific elements*/
-.align-center {
-    text-align: center;
+.form-submit-button {
+    background: #fff;
+    color: #111111;
+    border-style: outset;
+    border-color: #111111;
+    height: 50px;
+    width: 100px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:none;
 }
 
 @media all and (min-width:900px){
+    /* Layout */
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main {
+        margin: 0px 100px;
+        margin-top: 70px;
+    }
+
+    /* Flexbox */
 	.group {
 		flex-direction: row;
     }
 
+    .item {
+        margin-right: 30px;
+    }
+
+    #contact .group .item-bottom{
+        margin-top: 0px;
+    }
+
+    /* Text */
+    header h1{
+        font-size: 48px;
+        margin: 14px 0 14px 14px;
+        padding-top: 0;
+    }
+
+    /* Navigation */
+    nav{
+        margin-top: 15px;
+    }
+
+    /* Images */
     .profile-pic {
         min-width: 220px;
         max-width: 250px;
     }
     
-    main {
-        margin: 0px 100px;
-        margin-top: 70px;
-    }
-    
-    .item {
-        margin-right: 30px;
-    }
-    
-    .item-padded{
-        margin: 30px;
-    }
-
     img{
         width: 100%;
         max-width:500px;
     }
-    
+
 }
